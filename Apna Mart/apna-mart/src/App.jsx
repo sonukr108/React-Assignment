@@ -1,18 +1,22 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import { BrowserRouter, Router, Route } from 'react-router-dom'
-const App = () => {
+import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home.jsx'
+import About from './pages/About'
+import Navbar from './components/Navbar.jsx'
+import Contact from './pages/Contact.jsx'
+
+function App() {
   return (
-    <div>
-      <Navbar />
+    <>
       <BrowserRouter>
-      <Router>
-        <Route>
-          
-        </Route>
-      </Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
       </BrowserRouter>
-    </div>
+    </>
   )
 }
 

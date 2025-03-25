@@ -3,7 +3,7 @@ import logo from '../assets/apnamartLogo.svg';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
-    <div className='h-[80px] w-screen bg-[#2F61AE] text-white flex items-center px-[8%] gap-10 justify-between'>
+    <div className='h-[80px] w-100vw bg-[#2F61AE] text-white flex items-center px-[8%] gap-10 justify-between sticky top-0'>
       <div className='flex items-center gap-5'>
       <Link to='/'><img src={logo} alt="Apna Mart Logo" className="h-5 w-auto" /></Link>
       <span className='flex gap-4'>

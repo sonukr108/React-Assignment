@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import locationImag from '../assets/'
+import locationImg from '../assets/loactionImg.svg'
 
 const words = ["Noodles", "Cleaning Supplies", "Snacks", "Electronics", "Kitchen Ware", "Vegetables", "Groceries", "Dairy Products"];
 
@@ -56,15 +56,16 @@ const Home = () => {
     const HeroPart = () => {
         return (
             <div className='hero-part flex'>
-                <div className="left w-full text-[#2F61AE] flex flex-col p-10">
-                    <h1 className='font-bold text-5xl/15'>Bringing<br /><span className='auto-font-extrabold border-b-8 border-yellow-400'><WordChanger/></span><br />closer to you!</h1>
+                <div className="left w-full flex flex-col p-10">
+                    <h1 className='font-bold text-[#2F61AE] text-5xl/15'>Bringing<br /><span className='auto-font-extrabold border-b-8 border-yellow-400'><WordChanger/></span><br />closer to you!</h1>
 
                     <p className='text-xl'>The future of retail is here! <br />
                     Shop from a nearby store or order online.</p>
 
                     <div className="buttons">
-                        <button>
-                            <img src={locationImag} alt="" />
+                        <button className='bg-[#2F61AE]'>
+                            <img src={locationImg} alt="" />
+                            <p>Find a nearby store</p>
                         </button>
                     </div>
                 </div>

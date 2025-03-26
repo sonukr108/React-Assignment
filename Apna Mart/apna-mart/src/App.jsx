@@ -5,6 +5,7 @@ import Navbar from './components/Navbar.jsx'
 import Contact from './pages/Contact.jsx'
 import Stores from './pages/Stores.jsx'
 import Franchise from './pages/Franchise.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/stores' element={<Stores />} />
           <Route path='/franchise' element={<Franchise />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   )

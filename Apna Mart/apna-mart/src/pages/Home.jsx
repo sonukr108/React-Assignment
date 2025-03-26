@@ -6,6 +6,7 @@ import bestprice from '../assets/bestPrice.svg'
 import offerDeals from '../assets/offerDeals.svg'
 import quality from '../assets/quality.svg'
 import delivery from '../assets/delivery.svg'
+// import bg from '../assets/topbg.svg'
 
 
 const words = ["Noodles", "Cleaning Supplies", "Snacks", "Electronics", "Kitchen Ware", "Vegetables", "Groceries", "Dairy Products"];
@@ -18,7 +19,7 @@ const WordChanger = () => {
             setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
         }, 1500);
 
-        return () => clearInterval(interval); // Cleanup on unmount
+        return () => clearInterval(interval);
     }, []);
 
     return <span className='text-6xl font-extrabold'>{words[currentWordIndex]}</span>;
@@ -71,7 +72,7 @@ const Home = () => {
                             Shop from a nearby store or order online.</p>
 
                         <div className="buttons sm:text-xl text-sm font-bold sm:font-normal text-white flex lg:flex-row flex-col gap-10">
-                            <button className='bg-[#2F61AE] py-2 px-5 flex gap-2 items-center cursor-pointer rounded-lg shadow-[4px_4px_0_#234275] border-2 border-[#234275] hover:bg-[#427cd3] hover:border-[#2F61AE] hover:shadow-none transition-all'>
+                            <button className='bg-[#2F61AE] sm:w-20 lg:w-50 py-2 px-5 flex gap-2 items-center cursor-pointer rounded-lg shadow-[4px_4px_0_#234275] border-2 border-[#234275] hover:bg-[#427cd3] hover:border-[#2F61AE] hover:shadow-none transition-all'>
                                 <span><img src={locationImg} /></span>
                                 <a href='/stores'>Find a nearby store</a>
                             </button>
@@ -81,7 +82,7 @@ const Home = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="right w-[30%] lg:flex hidden items-center justify-items-start" >
+                    <div className="right w-[30%] lg:flex hidden items-center justify-items-start bg-cover bg-[url('../../public/topbg.svg')]">
                         <img src={grocery} alt="grocery" className='h-70' />
                     </div>
                 </div>

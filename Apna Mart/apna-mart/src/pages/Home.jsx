@@ -2,6 +2,11 @@ import React, { useEffect, useState, useRef } from 'react'
 import locationImg from '../assets/loactionImg.svg'
 import playstoreImg from '../assets/playstoreImg.svg'
 import grocery from '../assets/grocery.png'
+import bestprice from '../assets/bestPrice.svg'
+import offerDeals from '../assets/offerDeals.svg'
+import quality from '../assets/quality.svg'
+import delivery from '../assets/delivery.svg'
+
 
 const words = ["Noodles", "Cleaning Supplies", "Snacks", "Electronics", "Kitchen Ware", "Vegetables", "Groceries", "Dairy Products"];
 
@@ -16,7 +21,7 @@ const WordChanger = () => {
         return () => clearInterval(interval); // Cleanup on unmount
     }, []);
 
-    return <span className='font-extrabold'>{words[currentWordIndex]}</span>;
+    return <span className='text-6xl font-extrabold'>{words[currentWordIndex]}</span>;
 };
 
 const Home = () => {
@@ -59,8 +64,8 @@ const Home = () => {
         return (
             <>
             <div className='hero-part flex h-full w-full px-[8%]'>
-                <div className="left lg:w-[70%] w-full text-[#2F61AE] flex flex-col py-10 px-0 lg:gap-10 gap-5">
-                    <h1 className='font-bold lg:text-5xl/15 text-4xl/12'>Bringing<br /><span className='auto-font-extrabold lg:border-b-8 border-b-5 border-yellow-400'><WordChanger /></span><br />closer to you!</h1>
+                <div className="left lg:w-[70%] w-full text-[#11448A] flex flex-col py-20 px-0 lg:gap-13 gap-5">
+                    <h1 className='font-bold md:text-5xl/15 text-4xl/12'>Bringing<br /><span className='auto-font-extrabold lg:border-b-8 border-b-5 border-yellow-400'><WordChanger /></span><br />closer to you!</h1>
 
                     <p className='lg:text-2xl text-xl'>The future of retail is here! <br />
                         Shop from a nearby store or order online.</p>
@@ -82,7 +87,28 @@ const Home = () => {
 
                 </div>
             </div>
-            <div className='h-20 w-full bg-yellow-400'></div>
+            <div className='w-full h-50 bg-yellow-400 text-[#11448A] px-[10%] py-25 flex flex-wrap items-center justify-between'>
+                <div className="apna-card text-center w-[250px] h-[300px] flex flex-col items-center justify-between">
+                    <img src={bestprice} alt="best price img" className=''/>
+                    <p className='text-4xl font-extrabold'>Best Price</p>
+                    <p className='text-md'>Our products are priced with care and love towards YOU.</p>
+                </div>
+                <div className="apna-card text-center w-[250px] h-[300px] flex flex-col items-center justify-between">
+                    <img src={delivery} alt="best price img" className=''/>
+                    <p className='text-4xl font-extrabold'>15 Minutes Delivery</p>
+                    <p className='text-md'>We deliver in minutes. 15 mins is all it takes.</p>
+                </div>
+                <div className="apna-card text-center w-[250px] h-[300px] flex flex-col items-center justify-between">
+                    <img src={quality} alt="best price img" className='relative top-[-30px]'/>
+                    <p className='text-4xl font-extrabold'>Quality Assortments</p>
+                    <p className='text-md'>We’ve got the BEST. Global, local, you name it.</p>
+                </div>
+                <div className="apna-card text-center w-[250px] h-[300px] flex flex-col items-center justify-between">
+                    <img src={offerDeals} alt="best price img" className='relative top-[-20px]'/>
+                    <p className='text-4xl font-extrabold'>Offers and deals</p>
+                    <p className='text-md'>Shopping is an everyday fun and pocket friendly experience with our regular offers and deals</p>
+                </div>
+            </div>
             </>
         )
     }

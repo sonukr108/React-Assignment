@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className='logo part hidden md:block'>
                     <img src={logoImgBlue} alt="apna mart logo" className='w-60' />
                 </div>
-                <div className='flex md:gap-12 sm:text-xl text-lg gap-5 font-bold'>
+                <div className='flex md:gap-12 md:text-xl text-sm gap-5 font-bold'>
                     <a href="/">Blog</a>
                     <a href="/">Creears</a>
                     <a href="/">Apply for franchise</a>

@@ -11,9 +11,6 @@ import scroll1 from '../assets/scroll1.webp'
 import scroll2 from '../assets/scroll2.webp'
 import scroll3 from '../assets/scroll3.webp'
 import scroll4 from '../assets/scroll4.webp'
-import scroll5 from '../assets/scroll5.webp'
-import scroll6 from '../assets/scroll6.webp'
-import scroll7 from '../assets/scroll7.webp'
 import story1 from '../assets/story1.webp'
 import story2 from '../assets/story2.webp'
 import story3 from '../assets/story3.webp'
@@ -95,12 +92,12 @@ const Home = () => {
         ];
 
         return (
-            <div className="w-full bg-blue-900 text-white py-4 overflow-hidden">
+            <div className="w-full bg-[#11448A] text-white py-8 overflow-hidden">
                 <div className="flex w-max animate-marquee">
                     {categories.concat(categories).map((item, index) => (
                         <div key={index} className="flex items-center text-lg font-semibold">
                             <div className="bg-white h-2 w-2 rounded-full"></div>
-                            <span className='px-8'>{item}</span>
+                            <span className='px-8 italic text-xl'>{item}</span>
                         </div>
                     ))}
                 </div>
@@ -163,9 +160,6 @@ const Home = () => {
                             <img src={scroll2} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
                             <img src={scroll3} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
                             <img src={scroll4} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
-                            <img src={scroll5} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
-                            <img src={scroll6} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
-                            <img src={scroll7} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -182,7 +176,7 @@ const Home = () => {
         return (
             <div className="w-full h-[90vh] p-[8%] flex flex-col items-center justify-center md:gap-10 gap-5 text-[#11448A] text-center md:bg-[url('../../public/Maskgroup.svg')] bg-top bg-cover bg-no-repeat">
                 <div>
-                    <p className='md:text-6xl text-3xl font-extrabold'>Build your brand <span className='underline text-yellow-600'>Apna with us.</span></p>
+                    <p className='md:text-6xl text-3xl font-extrabold'>Build your brand <span className='underline text-yellow-600'>with us.</span></p>
                 </div>
                 <div className='md:text-xl text-md'>
                     Launch your products with Apna Mart across tier-2 and tier-3 cities. We offer an <br className='hidden lg:block' />ambitious, efficient, multi-medium experience uniformly.

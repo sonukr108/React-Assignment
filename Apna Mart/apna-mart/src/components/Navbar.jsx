@@ -11,9 +11,8 @@ const Navbar = () => {
       </div>
       <div className="buttons lg:flex hidden gap-7 items-center text-lg font-bold">
         <span className='flex gap-10'>
-          <Link to='/' className='hover:text-yellow-500'>Home</Link>
           <Link to='/stores' className='hover:text-yellow-500'>Stores</Link>
-          <Link to='/contact' className='hover:text-yellow-500'>Contact</Link>
+          <Link to='https://play.google.com/store/apps/details?id=com.apnamart.apnaconsumer' target='_blank' className='hover:text-yellow-500'>Download App</Link>
         </span>
 
         <button className='bg-white text-[#2F61AE] py-2 px-5 cursor-pointer rounded-lg shadow-[4px_4px_0_#234275] border-2 border-[#234275] hover:bg-yellow-500 hover:shadow-none transition-all'>
@@ -22,7 +21,7 @@ const Navbar = () => {
 
       </div>
       <button className='block lg:hidden bg-white text-[#2F61AE] p-2 pt-3 cursor-pointer rounded-full border-2 border-[#234275] hover:bg-yellow-500 transition-all'>
-        <a href='/'><img src={sideline} alt="" /></a>
+        <Link to='/'><img src={sideline} alt="" /></Link>
       </button>
 
     </div>

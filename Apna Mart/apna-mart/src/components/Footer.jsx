@@ -34,29 +34,29 @@ const Footer = () => {
         <div className='footer h-[600px] bg-[#2F61AE] text-white w-full lg:rounded-[60px] rounded-3xl p-[8%] flex flex-col gap-5 '>
             <div className=' flex flex-col md:block gap-5'>
                 <div className='md:hidden w-full flex items-center justify-center'>
-                    <img src={logoImg} alt="apna mart logo" className='w-60' />
+                    <Link to='/'><img src={logoImg} alt="apna mart logo" className='w-60' /></Link>
                 </div>
                 <div className='xl:h-30 md:h-35 h-20 bg-white text-[#11448A] rounded-3xl flex xl:flex-row lg:gap-4 flex-col justify-evenly items-center'>
                     <div className='logo part hidden md:block'>
-                        <img src={logoImgBlue} alt="apna mart logo" className='w-60' />
+                        <Link to='/'><img src={logoImgBlue} alt="apna mart logo" className='w-60' /></Link>
                     </div>
                     <div className='flex md:gap-12 md:text-xl text-sm gap-5 font-bold'>
                         <Link to="/blog">Blog</Link>
-                        <Link to="https://www.linkedin.com/company/apnamart-hq/jobs/">Creears</Link>
+                        <Link to="https://www.linkedin.com/company/apnamart-hq/jobs/" target='_blank'>Creears</Link>
                         <Link to="/franchise">Apply for franchise</Link>
                     </div>
                     <div className='md:flex gap-5  hidden'>
-                        <img src={Facebook} alt="Facebook" />
-                        <img src={Linkedin} alt="Linkedin" />
-                        <img src={Youtube} alt="Youtube" />
-                        <img src={Instagram} alt="Instagram" />
+                        <Link to='https://www.linkedin.com/company/apnamart-hq' target='_blank'><img src={Linkedin} alt="Linkedin" /></Link>
+                        <Link to='https://www.facebook.com/apnamarthq' target='_blank'><img src={Facebook} alt="Facebook" /></Link>
+                        <Link to='https://www.youtube.com/channel/UC_aI3tO6oDo5WQejgTmffKA' target='_blank'><img src={Youtube} alt="Youtube" /></Link>
+                        <Link to='https://www.instagram.com/apnamart_official/' target='_blank'><img src={Instagram} alt="Instagram" /></Link>
                     </div>
                 </div>
                 <div className='flex gap-5 md:hidden justify-center'>
-                    <img src={FacebookWhite} alt="Facebook" />
-                    <img src={LinkedinWhite} alt="Linkedin" />
-                    <img src={YoutubeWhite} alt="Youtube" />
-                    <img src={InstagramWhite} alt="Instagram" />
+                    <Link to='https://www.linkedin.com/company/apnamart-hq' target='_blank'><img src={LinkedinWhite} alt="Linkedin" /></Link>
+                    <Link to='https://www.facebook.com/apnamarthq' target='_blank'><img src={FacebookWhite} alt="Facebook" /></Link>
+                    <Link to='https://www.youtube.com/channel/UC_aI3tO6oDo5WQejgTmffKA' target='_blank'><img src={YoutubeWhite} alt="Youtube" /></Link>
+                    <Link to='https://www.instagram.com/apnamart_official/' target='_blank'><img src={InstagramWhite} alt="Instagram" /></Link>
                 </div>
             </div>
             <div className="about-footer p-[5%] w-full flex items-center justify-between flex-col gap-4 xl:flex-row text-xs sm:text-base">
@@ -68,7 +68,7 @@ const Footer = () => {
                     <div className="bottom text-[11px] text-gray-300 text-center">CIN:U51100JH2021PTC016651 | Sonu Kumar Verma | +91 78578 83654 | support@apnamart.in</div>
                 </div>
                 <div className="right-about w-full flex justify-between sm:font-bold font-semibold">
-                    <Link to='/'>Privacy Policy</Link>
+                    <Link to=''>Privacy Policy</Link>
                     <Link to='/'>Terms of use</Link>
                     <Link to='/'>Return & Cancellation</Link>
                 </div>

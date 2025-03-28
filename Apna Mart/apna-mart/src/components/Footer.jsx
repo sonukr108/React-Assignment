@@ -36,7 +36,7 @@ const Footer = () => {
                 <div className='md:hidden w-full flex items-center justify-center'>
                     <img src={logoImg} alt="apna mart logo" className='w-60' />
                 </div>
-                <div className='lg:h-27 md:h-35 h-20 bg-white text-[#11448A] rounded-3xl flex lg:flex-row lg:gap-4 flex-col justify-evenly items-center'>
+                <div className='xl:h-30 md:h-35 h-20 bg-white text-[#11448A] rounded-3xl flex xl:flex-row lg:gap-4 flex-col justify-evenly items-center'>
                     <div className='logo part hidden md:block'>
                         <img src={logoImgBlue} alt="apna mart logo" className='w-60' />
                     </div>
@@ -59,7 +59,7 @@ const Footer = () => {
                     <img src={InstagramWhite} alt="Instagram" />
                 </div>
             </div>
-            <div className="about-footer p-[5%] w-full flex items-center justify-between flex-col gap-4 xl:flex-row">
+            <div className="about-footer p-[5%] w-full flex items-center justify-between flex-col gap-4 xl:flex-row text-xs sm:text-base">
                 <div className="left-about w-full flex flex-col gap-1 items-center xl:items-start">
                     <div className="top flex gap-8">
                         <span>coding w0rld Pvt Ltd</span>
@@ -67,7 +67,7 @@ const Footer = () => {
                     </div>
                     <div className="bottom text-[11px] text-gray-300 text-center">CIN:U51100JH2021PTC016651 | Sonu Kumar Verma | +91 78578 83654 | support@apnamart.in</div>
                 </div>
-                <div className="right-about w-full flex justify-between font-bold">
+                <div className="right-about w-full flex justify-between sm:font-bold font-semibold">
                     <Link to='/'>Privacy Policy</Link>
                     <Link to='/'>Terms of use</Link>
                     <Link to='/'>Return & Cancellation</Link>

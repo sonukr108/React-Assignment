@@ -31,7 +31,7 @@ const Footer = () => {
     ];
 
     return (
-        <div className='footer h-[600px] bg-[#2F61AE] text-white w-full lg:rounded-[60px] rounded-3xl p-[8%] flex flex-col gap-10 '>
+        <div className='footer h-[600px] bg-[#2F61AE] text-white w-full lg:rounded-[60px] rounded-3xl p-[8%] flex flex-col gap-5 '>
             <div className=' flex flex-col md:block gap-5'>
                 <div className='md:hidden w-full flex items-center justify-center'>
                     <img src={logoImg} alt="apna mart logo" className='w-60' />
@@ -57,6 +57,20 @@ const Footer = () => {
                     <img src={LinkedinWhite} alt="Linkedin" />
                     <img src={YoutubeWhite} alt="Youtube" />
                     <img src={InstagramWhite} alt="Instagram" />
+                </div>
+            </div>
+            <div className="about-footer p-[5%] w-full flex items-center justify-between flex-col gap-4 xl:flex-row">
+                <div className="left-about w-full flex flex-col gap-1 items-center xl:items-start">
+                    <div className="top flex gap-8">
+                        <span>coding w0rld Pvt Ltd</span>
+                        <span>All rights reserved</span>
+                    </div>
+                    <div className="bottom text-[11px] text-gray-300 text-center">CIN:U51100JH2021PTC016651 | Sonu Kumar Verma | +91 78578 83654 | support@apnamart.in</div>
+                </div>
+                <div className="right-about w-full flex justify-between font-bold">
+                    <Link to='/'>Privacy Policy</Link>
+                    <Link to='/'>Terms of use</Link>
+                    <Link to='/'>Return & Cancellation</Link>
                 </div>
             </div>
             <div className="cities text-[#11448A] bg-white p-[8%] rounded-4xl flex flex-col gap-7 border-2 border-gray-200">

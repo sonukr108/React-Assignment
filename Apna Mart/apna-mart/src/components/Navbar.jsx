@@ -17,7 +17,7 @@ const Navbar = () => {
         </span>
 
         <button className='bg-white text-[#2F61AE] py-2 px-5 cursor-pointer rounded-lg shadow-[4px_4px_0_#234275] border-2 border-[#234275] hover:bg-yellow-500 hover:shadow-none transition-all'>
-          <a href='/franchise'>Apply for franchise</a>
+          <Link to='/franchise'>Apply for franchise</Link>
         </button>
 
       </div>

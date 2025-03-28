@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import locationImg from '../assets/loactionImg.svg'
 import playstoreImg from '../assets/playstoreImg.svg'
 import grocery from '../assets/grocery.png'
@@ -6,7 +7,16 @@ import bestprice from '../assets/bestPrice.svg'
 import offerDeals from '../assets/offerDeals.svg'
 import quality from '../assets/quality.svg'
 import delivery from '../assets/delivery.svg'
-// import bg from '../assets/topbg.svg'
+import scroll1 from '../assets/scroll1.webp'
+import scroll2 from '../assets/scroll2.webp'
+import scroll3 from '../assets/scroll3.webp'
+import scroll4 from '../assets/scroll4.webp'
+import scroll5 from '../assets/scroll5.webp'
+import scroll6 from '../assets/scroll6.webp'
+import scroll7 from '../assets/scroll7.webp'
+import story1 from '../assets/story1.webp'
+import story2 from '../assets/story2.webp'
+import story3 from '../assets/story3.webp'
 
 
 const words = ["Noodles", "Cleaning Supplies", "Snacks", "Electronics", "Kitchen Ware", "Vegetables", "Groceries", "Dairy Products"];
@@ -26,41 +36,6 @@ const WordChanger = () => {
 };
 
 const Home = () => {
-    // const [demoData, setDemoData] = useState([]);
-    // const [err, setErr] = useState("");
-    // const [loading, setLoading] = useState(false);
-
-    // const fetchData = async () => {
-    //     try {
-    //         setLoading(true)
-    //         const response = await fetch("https://fakestoreapi.com/products");
-    //         if (!response.ok) {
-    //             throw new Error("Failed to fetch API");
-    //         }
-    //         const data = await response.json();
-
-    //         setDemoData(data);
-    //     } catch (error) {
-    //         console.log(error);
-    //         setErr(error)
-    //     } finally {
-    //         setLoading(false)
-    //     }
-    // }
-
-    // useEffect(() => {
-    //     fetchData()
-    // }, [])
-
-    // if (loading) return (
-    //     <div>Loading...</div>
-    // )
-
-    // if (err != "") return (
-    //     <div>{err}</div>
-    // )
-
-
     const HeroPart = () => {
         return (
             <div className='min-h-screen'>
@@ -74,7 +49,7 @@ const Home = () => {
                         <div className="buttons lg:text-xl text-sm font-bold sm:font-normal text-white flex xl:flex-row flex-col gap-10">
                             <button className='bg-[#2F61AE] lg:w-60 w-50 py-2 px-5 flex gap-2 items-center cursor-pointer rounded-lg shadow-[4px_4px_0_#234275] border-2 border-[#234275] hover:bg-[#427cd3] hover:border-[#2F61AE] hover:shadow-none transition-all'>
                                 <span><img src={locationImg} /></span>
-                                <a href='/stores'>Find a nearby store</a>
+                                <Link to='/stores'>Find a nearby store</Link>
                             </button>
                             <button className='bg-[#2F61AE] lg:w-60 w-50 py-2 px-5 flex gap-2 items-center cursor-pointer rounded-lg shadow-[4px_4px_0_#234275] border-2 border-[#234275] hover:bg-[#427cd3] hover:border-[#2F61AE] hover:shadow-none transition-all'>
                                 <span><img src={playstoreImg} /></span>
@@ -108,25 +83,155 @@ const Home = () => {
                         <p className='text-md'>Shopping is an everyday fun and pocket friendly experience with our regular offers and deals</p>
                     </div>
                 </div>
-                <div className='bg-red-300'>
-                    <h1>Hello before footer</h1>
+                <div className=''>
+                    <h1>&nbsp;</h1>
                 </div>
             </div>
         )
     }
+    const ScrollThings = () => {
+        const categories = [
+            "Pet Care", "Baby Care", "Stationery & Toys", "Personal Care", "Beverages", "Grocery & Staples", "Biscuits & Snacks", "Kitchen Needs", "Pooja Needs"
+        ];
+
+        return (
+            <div className="w-full bg-blue-900 text-white py-4 overflow-hidden">
+                <div className="flex w-max animate-marquee">
+                    {categories.concat(categories).map((item, index) => (
+                        <div key={index} className="flex items-center text-lg font-semibold">
+                            <div className="bg-white h-2 w-2 rounded-full"></div>
+                            <span className='px-8'>{item}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        );
+    }
+
+    const FindLocation = () => {
+        return (
+            <div className=" w-full h-[70vh] bg-[url('../../public/bgmap.png')] bg-top bg-cover bg-no-repeat flex flex-col lg:flex-row lg:gap-30 gap-10 p-[8%] justify-center items-center">
+                <div className='lg:text-6xl text-3xl font-extrabold text-[#11448A]'>
+                    <h1><span className='text-yellow-600 underline'>Closer</span> <br />to you</h1>
+                </div>
+                <div className='flex flex-col gap-10'>
+                    <p className='lg:text-4xl text-2xl italic font-bold text-[#2F61AE]'>We’re never far away. <br /> Find an Apna Mart <br /> near you.</p>
+                    <button className='bg-[#2F61AE] lg:w-60 w-50 py-2 px-5 flex gap-2 items-center cursor-pointer rounded-lg shadow-[4px_4px_0_#234275] border-2 border-[#234275] hover:bg-[#427cd3] hover:border-[#2F61AE] hover:shadow-none transition-all lg:text-xl text-sm font-bold sm:font-normal text-white'>
+                        <span><img src={locationImg} /></span>
+                        <Link to='/stores'>Find a nearby store</Link>
+                    </button>
+                </div>
+            </div>
+        );
+    }
+
+    const Franchise = () => {
+        return (
+            <div className='w-full h-[60vh] p-[8%] flex flex-col items-center justify-center md:gap-10 gap-5 text-[#11448A] text-center'>
+                <div>
+                    <p className='md:text-6xl text-3xl font-extrabold'>You can own an <span className='underline text-yellow-600'>Apna Mart store!</span></p>
+                </div>
+                <div className='md:text-xl text-md'>
+                    What you may NOT need : a business experience. <br className='hidden lg:block' />
+                    Take the first step towards the best and the future! <br className='hidden lg:block' />
+                    Our team, tools and time to build “YOUR” Apna store!
+                </div>
+                <div>
+                    <button className='bg-white text-[#2F61AE] py-2 px-5 cursor-pointer rounded-lg shadow-[4px_4px_0_#234275] border-2 border-[#234275] hover:bg-yellow-500 hover:shadow-none transition-all text-lg font-bold'>
+                        <Link to='/franchise'>Apply for franchise</Link>
+                    </button>
+                </div>
+            </div>
+        );
+    }
+
+    const FranchiseNext = () => {
+        return (
+            <div className='w-full h-[100vh] p-[8%] bg-[#FFCA49] flex flex-col items-center justify-center md:gap-10 gap-5 text-[#11448A] text-center lg:rounded-[60px]'>
+                <div>
+                    <p className='md:text-6xl text-3xl font-extrabold'>We’re growing, come <span className='underline text-white'>join us.</span></p>
+                </div>
+                <div className='md:text-xl text-md'>
+                    Upgrade your store with Apna Mart. <br className='hidden lg:block' />
+                    With your trust and your passion, we refashion <br className='hidden lg:block' />
+                    your store's experience!
+                </div>
+                <div>
+                    <div class="relative overflow-hidden">
+                        <div class="flex space-x-4 animate-marquee-scroll">
+                            <img src={scroll1} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
+                            <img src={scroll2} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
+                            <img src={scroll3} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
+                            <img src={scroll4} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
+                            <img src={scroll5} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
+                            <img src={scroll6} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
+                            <img src={scroll7} class="lg:h-80 lg:w-120 h-40 w-60 object-cover rounded-lg" />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button className='bg-white text-[#2F61AE] py-2 px-5 cursor-pointer rounded-lg shadow-[4px_4px_0_#234275] border-2 border-[#234275] hover:bg-yellow-500 hover:shadow-none transition-all text-lg font-bold'>
+                        <Link to='/franchise'>Apply for franchise</Link>
+                    </button>
+                </div>
+            </div>
+        );
+    }
+
+    const ContactUs = () => {
+        return (
+            <div className="w-full h-[90vh] p-[8%] flex flex-col items-center justify-center md:gap-10 gap-5 text-[#11448A] text-center md:bg-[url('../../public/Maskgroup.svg')] bg-top bg-cover bg-no-repeat">
+                <div>
+                    <p className='md:text-6xl text-3xl font-extrabold'>Build your brand <span className='underline text-yellow-600'>Apna with us.</span></p>
+                </div>
+                <div className='md:text-xl text-md'>
+                    Launch your products with Apna Mart across tier-2 and tier-3 cities. We offer an <br className='hidden lg:block' />ambitious, efficient, multi-medium experience uniformly.
+                </div>
+                <div>
+                    <button className='bg-white text-[#2F61AE] py-2 px-5 cursor-pointer rounded-lg shadow-[4px_4px_0_#234275] border-2 border-[#234275] hover:bg-yellow-500 hover:shadow-none transition-all text-lg font-bold'>
+                        <a href='/contact'>Contact Us</a>
+                    </button>
+                </div>
+            </div>
+        );
+    }
+    const Stories = () => {
+        return (
+            <div className="w-full lg:h-[80vh] h-[140vh] p-[8%] flex flex-col items-center justify-center md:gap-10 gap-5 text-[#11448A] text-center bg-[#FFCA49] lg:rounded-[60px]">
+                <div>
+                    <p className='md:text-6xl text-3xl font-extrabold'>Apna Stories!</p>
+                </div>
+                <div className='md:text-xl text-md'>
+                    Visit our blogs for happy stories and the latest Apna Mart updates
+                </div>
+                <div className="stories flex flex-col lg:flex-row gap-5 w-full items-center justify-between">
+                    <div className="story-card lg:w-[30%] w-[70%] flex items-center justify-center flex-col gap-5">
+                        <img src={story1} alt="storycard" className='lg:w-80 w-100 rounded-lg'/>
+                        <p className='md:text-lg text-sm font-bold'>Steps to Download Apna Mart App and Order Groceries Online in Ranchi</p>
+                    </div>
+                    <div className="story-card lg:w-[30%] w-[70%] flex items-center justify-center flex-col gap-5">
+                        <img src={story2} alt="storycard" className='lg:w-80 w-100 rounded-lg'/>
+                        <p className='md:text-lg text-sm font-bold'>Online Grocery Delivery in Ranchi: Get Daily Essentials at Your Doorstep 15 min</p>
+                    </div>
+                    <div className="story-card lg:w-[30%] w-[70%] flex items-center justify-center flex-col gap-5">
+                        <img src={story3} alt="storycard" className='lg:w-80 w-100 rounded-lg'/>
+                        <p className='md:text-lg text-sm font-bold'>Apna Mart Brings 15 minutes Ultra Fast Grocery Delivery in Jamshedpur</p>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
 
     return (
         <>
             <HeroPart />
-            {/* <div className='w-full flex gap-3 flex-wrap mt-5 px-[8%]'>
-                {demoData.map((data) => (
-                    <div key={data.id} className='h-[400px] w-[300px] m-1 flex flex-col rounded-xl gap-2 p-[2%] border-1 cursor-pointer hover:shadow-[0px_3px_6px_rgba(0,0,0,0.16),_0px_3px_6px_rgba(0,0,0,0.23)]'>
-                        <img className='h-[70%]' src={data.image} />
-                        <h1 className='h-[15%] overflow-hidden'>{data.title}</h1>
-                        <p className='font-bold text-xl text-blue-600'>$ {data.price}</p>
-                    </div>
-                ))}
-            </div> */}
+            <ScrollThings />
+            <FindLocation />
+            <Franchise />
+            <FranchiseNext />
+            <ContactUs />
+            <Stories />
         </>
 
     )

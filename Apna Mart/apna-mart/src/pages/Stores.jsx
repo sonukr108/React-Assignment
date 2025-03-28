@@ -99,7 +99,7 @@ const Stores = () => {
   };
 
   return (
-    <div className='px-[8%] py-4 flex w-full justify-between gap-5 bg-gray-100'>
+    <div className='px-[8%] py-10 flex w-full justify-between gap-5 bg-gray-100'>
       <div className="store-list w-full flex flex-col gap-5">
         {locations.map((location, index) => (
           <StoreCard key={index} location={location} />

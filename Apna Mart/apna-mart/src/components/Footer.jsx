@@ -59,7 +59,7 @@ const Footer = () => {
                     <img src={InstagramWhite} alt="Instagram" />
                 </div>
             </div>
-            <div className="about-footer p-[5%] w-full flex items-center justify-between flex-col gap-4 xl:flex-row text-xs sm:text-xl">
+            <div className="about-footer p-[5%] w-full flex items-center justify-between flex-col gap-4 xl:flex-row text-xs sm:text-base">
                 <div className="left-about w-full flex flex-col gap-1 items-center xl:items-start">
                     <div className="top flex gap-8">
                         <span>coding w0rld Pvt Ltd</span>

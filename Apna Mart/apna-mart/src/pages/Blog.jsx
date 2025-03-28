@@ -5,7 +5,7 @@ import story3 from '../assets/story3.webp'
 const Blog = () => {
   const Stories = () => {
     return (
-      <div className="w-full lg:h-[80vh] h-[140vh] p-[8%] flex flex-col items-center md:gap-10 gap-5 text-[#11448A]">
+      <div className="w-full lg:h-[80vh] h-[140vh] flex flex-col items-center md:gap-10 gap-5 text-[#11448A]">
         <div className="stories flex flex-col lg:flex-row gap-5 w-full items-center justify-between">
           <div className="story-card bg-blue-200 p-5 rounded-xl lg:w-[30%] w-[70%] flex items-center justify-center flex-col gap-5">
             <img src={story1} alt="storycard" className='lg:w-80 w-100 rounded-lg' />

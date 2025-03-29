@@ -8,7 +8,7 @@ const App = () => {
   const getWeather = async () => {
     const city = cityInputRef.current.value;
     const apiKey = "44023e9516e944a0aa7145249252703";
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`;
 
     try {
       const response = await fetch(url);

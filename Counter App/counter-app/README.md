@@ -1,11 +1,11 @@
 ## 🚀 Live Demo
 🔗 Click to use [Counter App]( https://react-assignment-beige.vercel.app/ )
 
-Counter App
+## Counter App
 
 A simple counter application built using React and TailwindCSS.
 
-Features
+## Features
 
 Increment and decrement the counter.
 

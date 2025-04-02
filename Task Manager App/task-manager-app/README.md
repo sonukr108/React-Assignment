@@ -1,17 +1,20 @@
-Task Manager App
+## Counter App
 
-This project is a simple and efficient Task Manager App built with React and Vite. It provides a seamless experience for managing tasks with fast refresh and ESLint integration.
+- This project is a simple and efficient Task Manager App built with React and Vite. It provides a seamless experience for managing tasks with fast refresh and ESLint integration.
 
-Features
+## 🚀 Live Demo
+🔗 Click to use [Counter App]( [https://react-assignment-beige.vercel.app/](https://react-assignment-task-manager-app.vercel.app/) )
 
-Create and delete tasks
+## Features
 
-Responsive UI for better user experience
+- Create and delete tasks
 
-Fast development with Vite
+- Responsive UI for better user experience
 
-Technologies Used
+- Fast development with Vite
 
-React for UI development
+- Technologies Used
 
-Vite for fast build 
+- React for UI development
+
+- Vite for fast build 

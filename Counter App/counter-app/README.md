@@ -20,8 +20,3 @@
 - React.js
 
 - TailwindCSS
-
-Live Demo
-
-Click here to view the live demo (https://react-assignment-beige.vercel.app/)
-

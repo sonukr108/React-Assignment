@@ -3,7 +3,7 @@
 - This project is a simple and efficient Task Manager App built with React and Vite. It provides a seamless experience for managing tasks with fast refresh and ESLint integration.
 
 ## 🚀 Live Demo
-🔗 Click to use [Counter App]( [https://react-assignment-beige.vercel.app/](https://react-assignment-task-manager-app.vercel.app/) )
+🔗 Click to use [Task Manager App](https://react-assignment-task-manager-app.vercel.app/)
 
 ## Features
 

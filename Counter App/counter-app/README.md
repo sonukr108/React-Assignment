@@ -3,23 +3,23 @@
 
 ## Counter App
 
-A simple counter application built using React and TailwindCSS.
+- A simple counter application built using React and TailwindCSS.
 
 ## Features
 
-Increment and decrement the counter.
+- Increment and decrement the counter.
 
-Reset counter to default value.
+- Reset counter to default value.
 
-Smooth UI with TailwindCSS styling.
+- Smooth UI with TailwindCSS styling.
 
-Fully responsive design.
+- Fully responsive design.
 
-Technologies Used
+- Technologies Used
 
-React.js
+- React.js
 
-TailwindCSS
+- TailwindCSS
 
 Live Demo
 

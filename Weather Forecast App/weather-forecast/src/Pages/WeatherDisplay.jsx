@@ -43,14 +43,16 @@ function WeatherDisplay() {
 
     return (
         <div className="min-h-screen flex flex-col gap-5 items-center px-[8%] py-[5%]">
-            <FiSearch />
-            <FiSearch/>
-            <input
-                type="text"
-                ref={cityInputRef}
-                placeholder="Search our city..."
-                className="border-2 border-gray-600 dark:border-gray-400 focus:outline-none focus:border-gray-900 dark:focus:border-white p-2 rounded-xl w-full bg-[url('../../public/search.svg')] bg-no-repeat bg-[8px_6px] pl-10 font-semibold  lg:w-[60%] lg:h-15 lg:bg-[15px_15px] lg:pl-12 lg:text-xl"
-            />
+            <div className='w-full md:w-[60%] p-3 gap-2 flex items-center border-2 border-gray-600 dark:border-gray-400 rounded-lg'>
+                <label htmlFor="searchbox"><FiSearch size={25}/></label>
+                <input
+                    id='searchbox'
+                    type="text"
+                    ref={cityInputRef}
+                    placeholder="Search our city..."
+                    className="rounded-xl w-full font-semibold outline-none pl-1"
+                />
+            </div>
             <button
                 className="bg-blue-400 text-black py-2 px-4 font-semibold rounded-bl-xl rounded-tr-xl shadow-[0px_3px_6px_rgba(0,0,0,0.16),_0px_3px_6px_rgba(0,0,0,0.23)] hover:bg-blue-700 hover:text-white cursor-pointer transition-all duration-300"
                 onClick={getWeather}
@@ -84,14 +86,14 @@ function WeatherDisplay() {
                         </div>
                         <div className="sun flex flex-col xl:flex-row gap-3 lg:gap-5">
                             <div className="sunrise flex gap-3">
-                                <img src={Sunrise} alt="sunrise img" className='dark:invert'/>
+                                <img src={Sunrise} alt="sunrise img" className='dark:invert' />
                                 <span className="flex flex-col">
                                     <p className="text-2xl font-semibold">Sunrise</p>
                                     <p className="text-xl">{sunrise}</p>
                                 </span>
                             </div>
                             <div className="sunset flex gap-3">
-                                <img src={Sunset} alt="sunset img" className='dark:invert'/>
+                                <img src={Sunset} alt="sunset img" className='dark:invert' />
                                 <span className="flex flex-col">
                                     <p className="text-2xl font-semibold">Sunset</p>
                                     <p className="text-xl">{sunset}</p>
@@ -110,22 +112,22 @@ function WeatherDisplay() {
                     </div>
                     <div className="all-temp-cards w-full flex flex-wrap items-center gap-5 justify-evenly">
                         <div className="temp-card flex flex-col items-center justify-center gap-1 lg:gap-3">
-                            <img src={Humadity} alt="humadity img" className='dark:invert'/>
+                            <img src={Humadity} alt="humadity img" className='dark:invert' />
                             <p className="font-bold lg:text-xl">{weather.current.humidity}%</p>
                             <p>Humidity</p>
                         </div>
                         <div className="temp-card flex flex-col items-center justify-center gap-1 lg:gap-3">
-                            <img src={Wind} alt="wind img" className='dark:invert'/>
+                            <img src={Wind} alt="wind img" className='dark:invert' />
                             <p className="font-bold lg:text-xl">{weather.current.wind_kph} km/h</p>
                             <p>Wind Speed</p>
                         </div>
                         <div className="temp-card flex flex-col items-center justify-center gap-1 lg:gap-3">
-                            <img src={Pressure} alt="pressure img" className='dark:invert'/>
+                            <img src={Pressure} alt="pressure img" className='dark:invert' />
                             <p className="font-bold lg:text-xl">{weather.current.pressure_mb} hPa</p>
                             <p>Pressure</p>
                         </div>
                         <div className="temp-card flex flex-col items-center justify-center gap-1 lg:gap-3">
-                            <img src={UV} alt="uv img" className='dark:invert'/>
+                            <img src={UV} alt="uv img" className='dark:invert' />
                             <p className="font-bold lg:text-xl">{weather.current.uv}</p>
                             <p>UV</p>
                         </div>

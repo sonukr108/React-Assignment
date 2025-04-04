@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { FiSearch } from "react-icons/fi";
 import Sunrise from '../assets/sunrise.svg';
 import Sunset from '../assets/sunset.svg';
 import Humadity from '../assets/humadity.svg';
@@ -42,6 +43,7 @@ function WeatherDisplay() {
 
     return (
         <div className="min-h-screen flex flex-col gap-5 items-center px-[8%] py-[5%]">
+            <FiSearch />
             <input
                 type="text"
                 ref={cityInputRef}

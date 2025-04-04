@@ -44,6 +44,7 @@ function WeatherDisplay() {
     return (
         <div className="min-h-screen flex flex-col gap-5 items-center px-[8%] py-[5%]">
             <FiSearch />
+            <FiSearch/>
             <input
                 type="text"
                 ref={cityInputRef}

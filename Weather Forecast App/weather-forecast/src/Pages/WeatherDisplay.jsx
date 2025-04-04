@@ -43,7 +43,7 @@ function WeatherDisplay() {
 
     return (
         <div className="min-h-screen flex flex-col gap-5 items-center px-[8%] py-[5%]">
-            <div className='w-full md:w-[60%] p-3 gap-2 flex items-center border-2 border-gray-600 dark:border-gray-400 rounded-lg'>
+            <div className='w-full md:w-[60%] p-4 gap-2 flex items-center border-2 border-gray-600 dark:border-gray-400 rounded-lg'>
                 <label htmlFor="searchbox"><FiSearch size={25}/></label>
                 <input
                     id='searchbox'

@@ -3,7 +3,7 @@
 - This project is a simple and efficient Weather Forecast App built with React and Vite. It provides real-time weather updates with a fast and seamless user experience.
 
 ## 🚀 Live Demo
-🔗 Click to use [Weather Forecast App](https://weather-forecast-five-chi.vercel.app/)
+🔗 Click to use [Weather Forecast App](https://weather-forecast-by-sonu.vercel.app/)
 
 ## Features
 
